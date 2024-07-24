@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Character() {
   return (
    <Link to="/character">
-   <div>This is ccharcter page</div>
+   <div>This is charcter page</div>
    </Link>
    
   )

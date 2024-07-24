@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom";
 function Houses() {
   return (
-    <div>Houses</div>
-  )
+    <Link to="/houses">
+      <div>Houses</div>
+    </Link>
+  );
 }
 
-export default Houses
+export default Houses;

@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom'
 function Book() {
   return (
     <div>
-        <Link to="/">Book</Link>
+        <Link to="/">
+        <div>hello homepage</div>
+        
+        </Link>
 
-        ghjgjhgjh
+        
     </div>
   )
 }
