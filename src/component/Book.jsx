@@ -5,7 +5,7 @@ function Book() {
   return (
     <div>
         <Link to="/">
-        <div>hello homepage</div>
+        <div>hello book homepage</div>
         
         </Link>
 
