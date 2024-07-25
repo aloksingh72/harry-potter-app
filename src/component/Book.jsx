@@ -10,7 +10,7 @@ function Book() {
     const getData = async () => {
       try {
         const response = await axios.get(
-          "https://potterapi-fedeperin.vercel.app/en/books"
+          "https://potterhead-api.vercel.app/api/books"
         );
         setData(response.data);
         setLoading(false);
@@ -32,18 +32,27 @@ function Book() {
   console.log(data);
 
   return (
-    <div>
+    <div className="p-4">
       <Link to="/">
-        <h1>data from book api</h1>
-        <ul>
-          {data.map((item, index) => (
-            <div>
-              <img src={item.cover} alt="" />
- <li key={index}>{item.title}</li> // unique key use karenge for each item
+        <h1 className="text-2xl mb-4 ">Data from Book API</h1>
+
+        <div className="flex  w-[full] mx-2 gap-9">
+        {data.map((item, index) => (
+          <div key={index} className=" px-2 mb-4 ">
+            
+            {/* card ki div */}
+            <div className="bg-white  rounded-lg overflow-hidden w-[300px] shadow-md">
+              <img src={item.cover} alt="coverimage" className="w-full h-auto" />
+              {/* unique key use karenge for each items */}
+              <div className="p-4">
+              <h2 className="text-lg font-semibold">{item.title}</h2>
+              </div>
+              
+            
             </div>
-           
+          </div>
           ))}
-        </ul>
+        </div>
       </Link>
     </div>
   );
