@@ -36,21 +36,22 @@ function Book() {
       <Link to="/">
         <h1 className="text-2xl mb-4 ">Data from Book API</h1>
 
-        <div className="flex  w-[full] mx-2 gap-9">
-        {data.map((item, index) => (
-          <div key={index} className=" px-2 mb-4 ">
-            
-            {/* card ki div */}
-            <div className="bg-white  rounded-lg overflow-hidden w-[300px] shadow-md">
-              <img src={item.cover} alt="coverimage" className="w-full h-auto" />
-              {/* unique key use karenge for each items */}
-              <div className="p-4">
-              <h2 className="text-lg font-semibold">{item.title}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {data.map((item, index) => (
+            <div key={index} className=" px-2 max-w-[400px] mb-4 ">
+              {/* card ki div */}
+              <div className="bg-white  rounded-lg overflow-hidden w-[300px] shadow-md shadow-slate-700">
+                <img
+                  src={item.cover}
+                  alt="coverimage"
+                  className="w-full h-auto"
+                />
+                {/* unique key use karenge for each items */}
+                <div className="p-4">
+                  <h2 className="text-lg font-semibold">{item.title}</h2>
+                </div>
               </div>
-              
-            
             </div>
-          </div>
           ))}
         </div>
       </Link>

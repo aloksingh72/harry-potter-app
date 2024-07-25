@@ -4,6 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+/* .card{
+  -webkit-box-shadow: 1.5px 6px 32px 13px #3c3c08;
+-moz-box-shadow: 1.5px 6px 32px 13px #3c3c08;
+box-shadow: 1.5px 6px 32px 13px #3c3c08;
+} */
 /* 
 .logo {
   height: 6em;
