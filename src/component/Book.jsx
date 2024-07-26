@@ -38,7 +38,7 @@ function Book() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {data.map((item, index) => (
-            <div key={index} className=" px-2 max-w-[400px] mb-4 ">
+            <div key={index} className="hover:scale-105 transition-all duration-200 px-2 max-w-[400px] mb-4 ">
               {/* card ki div */}
               <div className="bg-white  rounded-lg overflow-hidden w-[300px] shadow-md shadow-slate-700">
                 <img
