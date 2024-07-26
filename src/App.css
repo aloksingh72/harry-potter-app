@@ -1,9 +1,16 @@
 #root {
-  max-width: 1280px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
+/* .background{
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+} */
 /* .card{
   -webkit-box-shadow: 1.5px 6px 32px 13px #3c3c08;
 -moz-box-shadow: 1.5px 6px 32px 13px #3c3c08;

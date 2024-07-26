@@ -14,6 +14,8 @@ function App() {
 
   return (
     <>
+    <div className='backgroun'>
+
     <Navbar path="/"/>
     <Routes>
     
@@ -23,6 +25,8 @@ function App() {
      <Route path="/movies" element={<Movies/>} ></Route>
 
     </Routes>
+    </div>
+    
     </>
   )
 }
