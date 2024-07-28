@@ -34,7 +34,7 @@ function Character() {
   console.log(data);
 
   // it will filter the whole data according to image condition 
-  const filteredData = data.filter(item => item.image);
+  // const filteredData = data.filter(item => item.image);
 
 
   return (
@@ -42,16 +42,16 @@ function Character() {
       <div className="p-4">
         <h1 className="text-2xl mb-4">Character Data</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {filteredData.map((item, index) => (
+          {data.map((item, index) => (
             <div key={index} 
             className="hover:scale-105 transition-all duration-200 bg-white rounded-lg overflow-hidden shadow-lg shadow-orange-500">
-            <img 
+            {/* <img 
               src={item.image}
-              alt="character" className="w-full h-[460px] object-cover"/>
+              alt="character" className="w-full h-[460px] object-cover"/> */}
              
              
-              {/* <img
-               src={item.image || defaultImage} alt="character" className="w-full h-[460px] object-cover" /> */}
+              <img
+               src={item.image || defaultImage} alt="character" className="w-full h-[460px] object-cover" />
               <div className="p-4">
                 <h2 className="text-lg font-semibold">{item.name}</h2>
               </div>
