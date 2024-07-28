@@ -16,10 +16,10 @@ function Modal({ isOpen, onClose, book }) {
           <p className="mt-2">Release Date: {book.release_date}</p>
           <p>No.of Pages: {book.pages} pages</p>
           
-          {/* <p>Description: {
+          <p>Description: {
           book.summary.length>100
-            ?(book.summary.substring(0, 100)) + "...":(book.summary)
-          }</p> */}
+            ?(book.summary.substring(0, 200)) + "...":(book.summary)
+          }</p>
 
         </div>
       </div>
