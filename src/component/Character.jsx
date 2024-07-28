@@ -42,8 +42,14 @@ function Character() {
           {data.map((item, index) => (
             <div key={index} 
             className="hover:scale-105 transition-all duration-200 bg-white rounded-lg overflow-hidden shadow-lg shadow-orange-500">
-              <img
-               src={item.image || defaultImage} alt="character" className="w-full h-[460px] object-cover" />
+             {item.image ?
+             (<img 
+              src={item.image}
+              alt="character" className="w-full h-[460px] object-cover"/>):("")}
+             
+             
+              {/* <img
+               src={item.image || defaultImage} alt="character" className="w-full h-[460px] object-cover" /> */}
               <div className="p-4">
                 <h2 className="text-lg font-semibold">{item.name}</h2>
               </div>
