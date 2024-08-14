@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <div className='backgroun'>
+    <div className=''>
 
     <Navbar path="/"/>
     <Routes>
